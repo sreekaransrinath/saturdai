@@ -1,33 +1,29 @@
 {
   "manifest_version": 3,
-  "name": "SaturdAI",
+  "name": "Saturdai",
   "version": "1.0.0",
-  "description": "Generate and populate text responses on social media platforms",
+  "description": "A Chrome extension for generating responses on social media platforms",
   "permissions": [
     "contextMenus",
     "activeTab",
-    "scripting",
-    "storage"
+    "scripting"
   ],
   "host_permissions": [
-    "*://*.twitter.com/*",
+    "*://*.x.com/*",
     "*://*.x.com/*",
     "*://*.linkedin.com/*"
   ],
   "background": {
-    "service_worker": "background.js",
-    "type": "module"
+    "service_worker": "background.js"
   },
   "content_scripts": [
     {
       "matches": [
-        "*://*.twitter.com/*",
+        "*://*.x.com/*",
         "*://*.x.com/*",
         "*://*.linkedin.com/*"
       ],
       "js": [
-        "utils.js",
-        "LLMService.js",
         "content-scripts/platforms.js",
         "content-scripts/content-script.js"
       ],
@@ -45,7 +41,6 @@
   "options_page": "options/options.html",
   "icons": {
     "16": "icons/icon16.png",
-    "32": "icons/icon32.png",
     "48": "icons/icon48.png",
     "128": "icons/icon128.png"
   },
@@ -53,7 +48,7 @@
     {
       "resources": ["icons/*"],
       "matches": [
-        "*://*.twitter.com/*",
+        "*://*.x.com/*",
         "*://*.x.com/*",
         "*://*.linkedin.com/*"
       ]

@@ -3,7 +3,7 @@ const utils = {
   // Get the current platform
   getCurrentPlatform: () => {
     const hostname = window.location.hostname;
-    if (hostname.includes('twitter.com') || hostname.includes('x.com')) {
+    if (hostname.includes('x.com') || hostname.includes('x.com')) {
       return 'twitter';
     } else if (hostname.includes('linkedin.com')) {
       return 'linkedin';
@@ -13,7 +13,7 @@ const utils = {
 
   // Log with consistent formatting
   log: (message, type = 'info') => {
-    const prefix = '[My Response Extension]';
+    const prefix = '[SaturdAI]';
     switch (type) {
       case 'error':
         console.error(prefix, message);
