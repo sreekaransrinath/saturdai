@@ -6,8 +6,8 @@ module.exports = defineConfig({
     // Launch Chrome with the extension
     launchOptions: {
       args: [
-        `--disable-extensions-except=${process.cwd()}/my-response-extension`,
-        `--load-extension=${process.cwd()}/my-response-extension`
+        `--disable-extensions-except=${process.cwd()}/saturdai`,
+        `--load-extension=${process.cwd()}/saturdai`
       ]
     }
   },

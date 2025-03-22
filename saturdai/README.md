@@ -14,12 +14,12 @@ A Chrome browser extension that generates and populates text responses on social
 1. Clone this repository
 2. Open Chrome and navigate to `chrome://extensions/`
 3. Enable "Developer mode" in the top right
-4. Click "Load unpacked" and select the `my-response-extension` directory
+4. Click "Load unpacked" and select the `saturdai` directory
 
 ## Project Structure
 
 ```
-my-response-extension/
+saturdai/
 ├── manifest.json
 ├── background.js
 ├── content-scripts/

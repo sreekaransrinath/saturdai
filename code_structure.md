@@ -1,4 +1,4 @@
-my-response-extension/
+saturdai/
 ├── manifest.json
 ├── background.js         (or service-worker.js, if using Manifest V3 Service Workers)
 ├── content-scripts/
