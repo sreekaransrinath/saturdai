@@ -1,0 +1,54 @@
+implementation_plan.md
+
+# Node.js dependencies
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Logs
+logs/
+*.log
+
+# Environment files
+.env
+.env.local
+.env.*.local
+
+# Extension build artifacts (if you bundle or transpile)
+dist/
+build/
+*.zip
+
+# Mac system files
+.DS_Store
+
+# VS Code settings
+.vscode/
+
+# Playwright artifacts
+playwright-report/
+test-results/
+*.patch
+
+# Chrome extension local dev files
+chrome-extension/
+extension-output/
+
+# OS or editor-specific files
+*.swp
+*.swo
+*.tmp
+.idea/
+*.bak
+Thumbs.db
+ehthumbs.db
+
+# Coverage reports
+coverage/
+
+# Optional: lock file if using Yarn and want to enforce npm
+yarn.lock
+
+# Optional: test screenshots
+*.png
